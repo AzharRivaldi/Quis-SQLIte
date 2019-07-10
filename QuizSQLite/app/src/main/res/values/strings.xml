@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Quiz SQLite</string>
+    <string name="category">Categories</string>
+    <string name="grid_image">Grid Image</string>
+    <string name="share_with">Share with</string>
+
+    <string name="matematika_category">Matematika</string>
+    <string name="ipa_category">IPA</string>
+    <string name="ips_category">IPS</string>
+    <string name="olahraga_category">Olahraga</string>
+    <string name="agama_category">Agama Islam</string>
+    <string name="program_category">Pemrograman</string>
+
+    <string-array name="category_title">
+        <item>@string/matematika_category</item>
+        <item>@string/ipa_category</item>
+        <item>@string/ips_category</item>
+        <item>@string/olahraga_category</item>
+        <item>@string/agama_category</item>
+        <item>@string/program_category</item>
+    </string-array>
+
+    <string name="matematika">matematika</string>
+    <string name="ipa">ipa</string>
+    <string name="ips">ips</string>
+    <string name="olahraga">olahraga</string>
+    <string name="agama">agama</string>
+    <string name="program">pemrograman</string>
+
+    <string-array name="category_ID">
+        <item>@string/matematika</item>
+        <item>@string/ipa</item>
+        <item>@string/ips</item>
+        <item>@string/olahraga</item>
+        <item>@string/agama</item>
+        <item>@string/program</item>
+    </string-array>
+
+</resources>
