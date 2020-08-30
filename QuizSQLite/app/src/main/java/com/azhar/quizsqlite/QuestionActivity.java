@@ -2,11 +2,17 @@ package com.azhar.quizsqlite;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.azhar.quizsqlite.R;
+import com.azhar.quizsqlite.QuestionAdapter;
+import com.azhar.quizsqlite.QuizDBHelper;
+import com.azhar.quizsqlite.Question;
 
 import java.util.ArrayList;
 import java.util.Objects;
