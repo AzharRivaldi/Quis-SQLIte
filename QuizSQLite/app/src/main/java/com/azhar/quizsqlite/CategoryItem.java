@@ -10,7 +10,7 @@ public class CategoryItem {
     private String mCategoryTitle;
     private String mCategoryID;
 
-    CategoryItem(int imageId, String categoryTitle, String categoryID) {
+    public CategoryItem(int imageId, String categoryTitle, String categoryID) {
         this.mBgColor = imageId;
         this.mCategoryTitle = categoryTitle;
         this.mCategoryID = categoryID;
