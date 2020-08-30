@@ -1,13 +1,19 @@
 package com.azhar.quizsqlite;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.azhar.quizsqlite.Question;
+import com.azhar.quizsqlite.QuestionActivity;
+import com.azhar.quizsqlite.R;
+import com.azhar.quizsqlite.ToggleButtonGroupTableLayout;
 
 import java.util.ArrayList;
 
@@ -21,7 +27,7 @@ public class QuestionAdapter extends RecyclerView.Adapter {
     private ArrayList<Question> mQuestionList;
     private String mCategoryLabel;
 
-    QuestionAdapter(Context context, ArrayList<Question> questionList, String category) {
+    public QuestionAdapter(Context context, ArrayList<Question> questionList, String category) {
         this.mContext = context;
         this.mQuestionList = questionList;
         this.mCategoryLabel = category;
