@@ -20,12 +20,12 @@ import java.util.ArrayList;
 
 public class CategoryAdapter extends ArrayAdapter<CategoryItem> {
 
-    static final String CATEGORY_COLOR = "CategoryColor";
-    static final String CATEGORY_ID = "CategoryID";
+    public static final String CATEGORY_COLOR = "CategoryColor";
+    public static final String CATEGORY_ID = "CategoryID";
     private Context mContext;
     private ArrayList<CategoryItem> mCategoryItems;
 
-    CategoryAdapter(@NonNull Context context, int resource, @NonNull ArrayList<CategoryItem> categoryItems) {
+    public CategoryAdapter(@NonNull Context context, int resource, @NonNull ArrayList<CategoryItem> categoryItems) {
         super(context, resource, categoryItems);
         this.mContext = context;
         this.mCategoryItems = categoryItems;
@@ -44,8 +44,7 @@ public class CategoryAdapter extends ArrayAdapter<CategoryItem> {
         final CategoryItem categoryItem = mCategoryItems.get(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(mContext)
-            .inflate(R.layout.grid_view_item, parent, false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.grid_view_item, parent, false);
             categoryViewHolder = new CategoryViewHolder(convertView);
             convertView.setTag(categoryViewHolder);
         }
