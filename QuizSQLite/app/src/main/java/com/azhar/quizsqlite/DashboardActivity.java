@@ -2,11 +2,17 @@ package com.azhar.quizsqlite;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.azhar.quizsqlite.R;
+import com.azhar.quizsqlite.CategoryAdapter;
+import com.azhar.quizsqlite.CategoryItem;
+import com.azhar.quizsqlite.Constant;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -42,7 +48,7 @@ public class DashboardActivity extends AppCompatActivity {
                 intent.setAction(Intent.ACTION_SEND);
                 intent.putExtra(Intent.EXTRA_TEXT, Constant.SHARE_CONTENT);
                 intent.setType("text/plain");
-                startActivity(Intent.createChooser(intent, getString(R.string.share_with)));
+                startActivity(Intent.createChooser(intent, "bagikan dengan :"));
             }
         });
 
